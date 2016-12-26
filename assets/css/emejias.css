@@ -1,0 +1,104 @@
+.text-cloud {
+  color: #ecf0f1;
+}
+.text-wet {
+  color: #34495e;
+}
+.roboto-lighter {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+.roboto-medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: medium;
+}
+.MainNav {
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+}
+.MainNav-list {
+  list-style: none;
+  padding-top: 1em;
+}
+.MainNav-item {
+  margin-right: 0.5em;
+  display: inline;
+  margin-bottom: 0.4em;
+}
+.MainNav-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #ecf0f1;
+  padding-bottom: 0.4em;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 0.2em;
+}
+.MainNav-link:hover,
+.MainNav-link:active,
+.MainNav-link:focus {
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+  text-decoration: none;
+}
+.MainNav-link-current {
+  border: 2px solid #e74c3c;
+  text-decoration: none;
+}
+.MainNav-down {
+  background-color: rgba(0,0,0,0.7);
+}
+.Header {
+  background-image: url("../images/OCNVR40.jpg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  background-size: cover !important;
+  background-position: bottom;
+  padding-top: 5em;
+}
+.Header-title {
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.portfolio {
+  background-color: #ecf0f1;
+  padding-bottom: 1em;
+}
+.thumbnail {
+  border: none;
+}
+.Footer {
+  background-color: #34495e;
+}
+.FooterNav {
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+}
+.FooterNav-item {
+  margin-bottom: 0.5em;
+}
+.FooterNav-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  color: #ecf0f1;
+  font-size: 1.5em;
+}
+.FooterNav-link >span {
+  width: 50px;
+}
+.FooterNav-link:hover {
+  color: #7f8c8d;
+  text-decoration: none;
+}
+#map {
+  width: 100%;
+  height: 400px;
+}
