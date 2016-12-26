@@ -98,6 +98,9 @@
   color: #7f8c8d;
   text-decoration: none;
 }
+.Footer-form {
+  margin-bottom: 1.5em;
+}
 #map {
   width: 100%;
   height: 400px;

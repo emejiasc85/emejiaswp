@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Desarrollo de aplicaciones web y páginas web en Petén Guatemala">
     <meta name="author" content="emejias">
-    <link rel="icon" href="assets/favicon.png">
+    <link rel="icon" href="assets/favicon.ico">
 
     <title>emejias</title>
 
@@ -43,7 +43,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="Header" id="services">
       <div class="container">
-        <h1 class="text-cloud Header-title col-xs-12 col-md-6 col-ms-4 text-white">Ayudamos a potenciar tu negocio desarrollando herramientas informaticas a tu medida, con acceso desde cualquier  dispositivo.</h1>
+        <h1 class="text-cloud Header-title col-xs-12 col-sm-6 col-ms-4 text-white">Ayudamos a potenciar tu negocio desarrollando herramientas informaticas a tu medida, con acceso desde cualquier  dispositivo.</h1>
       </div>
     </div>
 
@@ -55,7 +55,7 @@
         </div>
 
 
-        <div class="col-sm-6 col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="thumbnail">
             <img src="assets/images/consulting.svg" width="75" alt="...">
             <div class="caption text-center roboto-lighter">
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="thumbnail">
             <img src="assets/images/design.svg" width="75" alt="...">
             <div class="caption text-center roboto-lighter">
@@ -73,7 +73,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-sm-offset-3">
           <div class="thumbnail">
             <img src="assets/images/dev.svg" width="75" alt="...">
             <div class="caption text-center roboto-lighter">
@@ -89,13 +89,15 @@
           <h2 class="roboto-lighter">Portafolio</h2>
         </div>
         <div class="col-sm-12 col-xs-12 col-md-6">
+          <div>
             <h3>
               <a class="roboto-medium" href="elepet.com">elepet.com</a>
               <small>
                 <span class="label label-info pull-right">Pág. Web</span>
               </small>
             </h3>
-          <img src="assets/images/elepetweb.png" class="img-responsive" alt="">
+            <img src="assets/images/elepetweb.png" class="img-responsive" alt="">
+          </div>
         </div>
         <div class="col-sm-12 col-xs-12 col-md-6">
           <h3>
@@ -126,11 +128,11 @@
         </div>
       </div>
 
-      <footer class="Footer row roboto-lighter" id="footer">
-      <div class=" text-cloud col-xs-12 col-sm-6 col-md-4">
+      <footer class="Footer row roboto-lighter text-cloud " id="footer">
+      <div class=" col-xs-12 col-sm-12 col-md-8">
         <h3 class="roboto-medium">Contáctanos</h3>
         <p>Si estas interasado o tienes alguna propuesta de trabajo dejanos tu email y te contactaremos.</p>
-        <form>
+        <form class="col-xs-12 col-sm-6 Footer-form" >
           <div class="form-group">
             <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
           </div>
@@ -145,21 +147,21 @@
           </div>          
           <button type="submit" class="btn btn-default">Enviar</button>
         </form>
+        <div class="col-xs-12 col-sm-6">
+          <ul class="FooterNav">
+            <li class="FooterNav-item"><a href="" class="FooterNav-link"><span class="fa fa-whatsapp"></span>(502) 54606633</a></li>
+              <li class="FooterNav-item"><a href="" class="FooterNav-link"><span class="fa fa-envelope"></span>emejiasc85@gmail.com</a></li>
+              <li class="FooterNav-item"><a href="" class="FooterNav-link"><span class="fa fa-facebook"></span>Facebook</a></li>
+              <li class="FooterNav-item"><a href="" class="FooterNav-link"><span class="fa fa-instagram"></span>Instagram</a></li>
+              <li class="FooterNav-item"><a href="" class="FooterNav-link"><span class="fa fa-twitter"></span>Twitter</a></li>  
+          </ul>
+        </div>
       </div>
 
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <ul class="FooterNav">
-          <li class="FooterNav-item"><a href="" class="FooterNav-link"><span class="fa fa-whatsapp"></span>(502) 54606633</a></li>
-            <li class="FooterNav-item"><a href="" class="FooterNav-link"><span class="fa fa-envelope"></span>emejiasc85@gmail.com</a></li>
-            <li class="FooterNav-item"><a href="" class="FooterNav-link"><span class="fa fa-facebook"></span>Facebook</a></li>
-            <li class="FooterNav-item"><a href="" class="FooterNav-link"><span class="fa fa-instagram"></span>Instagram</a></li>
-            <li class="FooterNav-item"><a href="" class="FooterNav-link"><span class="fa fa-twitter"></span>Twitter</a></li>  
-        </ul>
-      </div>
       <div class="col-xs-12 col-sm-12 col-md-4" id="map">
       </div>
-      <div class="container">
-        <p>&copy; 2016 emejias.</p>
+      <div class="container text-center text-muted">
+        <p>&copy; 2016 <a href="emejias.com">emejias</a>.</p>
       </div>
       </footer>
     </div> <!-- /container -->
@@ -192,7 +194,7 @@
 
     //globo de informacion del marcador
       var popup = new google.maps.InfoWindow({
-        content: 'emejias'});
+        content: 'Visitanos en emejias'});
       popup.open(map, marker);
 
       var styleArray = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"color":"#f5401c"},{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#ed2e0d"},{"weight":"3"}]},{"featureType":"administrative.country","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#696363"}]},{"featureType":"administrative.country","elementType":"labels.text.stroke","stylers":[{"color":"#303030"},{"weight":"0.50"}]},{"featureType":"administrative.province","elementType":"geometry.fill","stylers":[{"color":"#d70f0f"},{"visibility":"off"}]},{"featureType":"administrative.province","elementType":"geometry.stroke","stylers":[{"color":"#e17c71"}]},{"featureType":"administrative.province","elementType":"labels.text.fill","stylers":[{"color":"#969696"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#882525"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"visibility":"off"},{"color":"#f52020"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ec564c"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#fb5118"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#f74b1c"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ff0000"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#f89988"}]},{"featureType":"road.arterial","elementType":"labels.text","stylers":[{"color":"#5d5d5d"}]},{"featureType":"road.arterial","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e8b4b4"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#6b6464"}]},{"featureType":"road.local","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"},{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#cfeae9"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#c6dadc"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#7d93a1"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"},{"weight":"2.00"}]}];
