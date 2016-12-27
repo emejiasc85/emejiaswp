@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="theme-color" content="#2c3e50">
+    <meta property="fb:admins" content="184864201964133"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -26,7 +27,7 @@
   <body>
     <nav class="MainNav">
       <ul class="MainNav-list container">
-      <li class="MainNav-item hidden-md hidden-lg">
+      <li class="MainNav-item">
         <img src="assets/images/logo2.png" alt="emejias logo" height="30">
       </li>
         <li class="MainNav-item">
@@ -36,9 +37,9 @@
           <a href="#portfolio" class="MainNav-link">Portafolio</a>
         </li> 
         <li class="MainNav-item hidden-xs">
-          <a href="#footer" class="MainNav-link MainNav-link-current">Contáctanos</a>        
+          <a href="#footer" class="MainNav-link">Contáctanos</a>        
         </li>
-        <li class="MainNav-item hidden-md hidden-lg">
+        <li class="MainNav-item hidden-sm hidden-md hidden-lg">
           <a href="tel:54606633" class="MainNav-link">
             <span class="fa fa-phone"> 5460-6633</span>
           </a>
@@ -48,17 +49,18 @@
     </nav>
     <div class="Header" id="services">
       <div class="container">
-        <div class="row">
-          <h1 class="text-cloud Header-title col-xs-12 col-sm-6 col-ms-4 col-md-7 text-white">
+        <div class="">
+          <h1 class="text-cloud Header-title col-xs-12 col-sm-6 col-md-7 col-lg-6">
             Ayudamos a potenciar tu negocio desarrollando herramientas informaticas a tu medida, con acceso desde cualquier  dispositivo.
           </h1>
-
-          <div class="hidden-xs hidden-sm col-sm-4 col-md-4 col-lg-3  Header-contact text-cloud">
-            <img src="assets/images/logo.png" width="175" alt="">
+          <div class="hidden-xs col-sm-6 col-md-5 col-lg-4 col-lg-offset-1  Header-contact text-cloud">
+            <!--
+            <img src="assets/images/logo.png" width="175" alt="" class="hidden-sm">
             <h3 class="roboto-medium">Contáctanos</h3>
             <p>Si estas interasado o tienes alguna propuesta de trabajo dejanos tu email y te contactaremos.</p>
+            -->
             <ul class="FooterNav">
-                <li class="FooterNav-item"><a href="tel:54606633" class="FooterNav-link"><span class="fa fa-whatsapp"></span>(502) 5460-6633</a></li>
+                <li class="FooterNav-item"><a href="tel:54606633" class="FooterNav-link"><span class="fa fa-phone"></span>(502) 5460-6633</a></li>
                 <li class="FooterNav-item"><a href="mailto:emejiasc85@gmail.com" class="FooterNav-link"><span class="fa fa-envelope"></span>emejiasc85@gmail.com</a></li>
                 <li class="FooterNav-item">
                   <a target="_black" href="https://www.facebook.com/emejiasdev/" class="FooterNav-link">
@@ -70,11 +72,13 @@
                   <a target="_black" href="https://twitter.com/EnrriqueMejiasC" class="FooterNav-link">
                     <span class="fa fa-twitter"></span>
                   </a>
+                  <a href="whatsapp://54606633" class="FooterNav-link">
+                    <span class="fa fa-whatsapp"></span>
+                  </a>
                 </li>
                  
               </ul>
           </div>
-          
         </div>
       </div>
     </div>
@@ -89,7 +93,7 @@
           <div class="thumbnail">
             <img src="assets/images/consulting.svg" width="75" alt="...">
             <div class="caption text-center roboto-lighter">
-              <h3 class="roboto-medium text-wet">Asesoria</h3>
+              <h3 class="roboto-medium text-wet">Asesoría</h3>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             </div>
           </div>
@@ -133,7 +137,7 @@
           </div>
           <div class="col-sm-12 col-xs-12 col-md-6 portfolio-item">
             <h3 class="portfolio-title">
-              <a class="roboto-medium" href="#">tanuxil.org.gt</a>
+              <a class="roboto-medium" href="tanuxil.org.gt">tanuxil.org.gt</a>
               <small>
                   <span class="label label-info pull-right">Pág. Web</span>
                 </small>
@@ -142,7 +146,7 @@
           </div>
           <div class="col-sm-12 col-xs-12 col-md-6 portfolio-item">
             <h3 class="portfolio-title">
-              <a class="roboto-medium" href="#">Centro Medico Maya</a>
+              <a class="roboto-medium" href="#">Centro Médico Maya</a>
               <small>
                 <span class="label label-danger pull-right">App. Web</span>
               </small>
@@ -168,31 +172,25 @@
       <div class="container-fluid">
         <div class=" col-xs-12 col-sm-12 col-md-8 col-lg-7">
           <h3 class="roboto-medium">Contáctanos</h3>
-          <p>Si estas interasado o tienes alguna propuesta de trabajo dejanos tu email y te contactaremos.</p>
           <div class="row">
-            <form class="col-xs-12 col-sm-6 Footer-form" >
-              <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="teléfono">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Descripción"></textarea>
-              </div>          
-              <button type="submit" class="btn btn-default">Enviar</button>
-            </form>
+            <div class="col-xs-12 col-sm-6">
+              <p>Si estas interasado o tienes alguna propuesta de trabajo dejanos un comentario y te contactaremos.</p>
+              <div class="fb-comments" data-href="http://emejias.com/" data-order-by="reverse_time" data-colorscheme="dark" data-width="100%" data-numposts="3"></div>
+            </div>
+        
             <div class="col-xs-12 col-sm-6">
               <ul class="FooterNav">
-                <li class="FooterNav-item"><a href="tel:54606633" class="FooterNav-link"><span class="fa fa-whatsapp"></span>(502) 5460-6633</a></li>
+                <li class="FooterNav-item"><a href="tel:54606633" class="FooterNav-link"><span class="fa fa-phone"></span>(502) 5460-6633</a></li>
+                <li class="FooterNav-item"><a href="whatsapp://tel:54606633" class="FooterNav-link"><span class="fa fa-whatsapp"></span>Enrique Mejías</a></li>
                 <li class="FooterNav-item"><a href="mailto:emejiasc85@gmail.com" class="FooterNav-link"><span class="fa fa-envelope"></span>emejiasc85@gmail.com</a></li>
                 <li class="FooterNav-item"><a target="_black" href="https://www.facebook.com/emejiasdev/" class="FooterNav-link"><span class="fa fa-facebook"></span>Facebook</a></li>
                 <li class="FooterNav-item"><a target="_black" href="https://www.instagram.com/emejiasc85/" class="FooterNav-link"><span class="fa fa-instagram"></span>Instagram</a></li>
                 <li class="FooterNav-item"><a target="_black" href="https://twitter.com/EnrriqueMejiasC" class="FooterNav-link"><span class="fa fa-twitter"></span>Twitter</a></li>  
+               
               </ul>
+            </div>
+            <div class="col-xs-12">
+               <div class="fb-like" data-href="http://emejias.com/" data-layout="standard" data-action="recommend" data-size="small" data-show-faces="true"></div>
             </div>
             
           </div>
@@ -214,7 +212,17 @@
     <script src="assets/js/bootstrap.min.js"></script>    
     <script src="assets/js/menu.fixed.js"></script>
 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <script>
+
 
     function initMap() {
 

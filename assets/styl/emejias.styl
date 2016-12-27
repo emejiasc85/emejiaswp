@@ -18,6 +18,7 @@ asbestos 	= #7f8c8d;
 .roboto-medium
 	font-family 'Roboto', sans-serif;
 	font-weight: medium
+
 .MainNav
 	background-color rgba(black .3)
 	position fixed
@@ -50,9 +51,8 @@ asbestos 	= #7f8c8d;
 	border 2px solid alizarin
 	text-decoration none			
 .MainNav-down
-	background-color rgba(black .7)
+	background-color rgba(black .7) !important
 .Header
-	position relative
 	background-image url('../images/OCNVR402.png')
 	background-position 100%
 	background-repeat no-repeat
@@ -62,14 +62,12 @@ asbestos 	= #7f8c8d;
 .Header-title
 	font-size 2em
 	font-family 'Roboto', sans-serif;
-	font-weight 300
+	font-weight 500
 .Header-contact
 	background-color rgba(black .3)
-	padding-top 5em
-	position absolute
-	z-index 99999
-	top 0
-	right 3.5em
+	border-radius 5px 
+	padding-top 1em
+	margin-top 1.5em
 .portfolio
 	background-color clouds
 	padding-bottom 1em
@@ -113,15 +111,22 @@ asbestos 	= #7f8c8d;
 	color wet
 	font-weight 
 	margin-top 2em
+@media screen and (min-width:750px)
+	.FooterNav
+		border-left 2px solid alizarin
+		padding-left 1em
+
+
 @media screen and (min-width:970px)
 	.MainNav
 		background-color transparent
 	.Header
-		min-height 30em
-	.Header-title
-		margin-top 2em
-		font-size 2.5em
-		border-left 2px solid clouds
+		//margin-top 1em
+		//font-size 2.5em
+		padding-top 4em
+	.Header-contact
+		margin-bottom 1em
+
 
 
  
