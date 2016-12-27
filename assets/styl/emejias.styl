@@ -52,6 +52,7 @@ asbestos 	= #7f8c8d;
 .MainNav-down
 	background-color rgba(black .7)
 .Header
+	position relative
 	background-image url('../images/OCNVR402.png')
 	background-position 100%
 	background-repeat no-repeat
@@ -61,10 +62,27 @@ asbestos 	= #7f8c8d;
 .Header-title
 	font-size 2em
 	font-family 'Roboto', sans-serif;
-	font-weight: 300
+	font-weight 300
+.Header-contact
+	background-color rgba(black .3)
+	padding-top 5em
+	position absolute
+	z-index 99999
+	top 0
+	right 3.5em
 .portfolio
 	background-color clouds
 	padding-bottom 1em
+.portfolio-item
+	margin-bottom 1em
+.portfolio-title
+	border-top 1px solid asbestos
+	border-left 1px solid asbestos
+	border-right 1px solid asbestos
+	margin 0
+	padding .3em
+	background-color: #F5F5F5
+	border-radius 5px 5px 0 0
 .thumbnail
 	border none
 .Footer
@@ -95,6 +113,16 @@ asbestos 	= #7f8c8d;
 	color wet
 	font-weight 
 	margin-top 2em
+@media screen and (min-width:970px)
+	.MainNav
+		background-color transparent
+	.Header
+		min-height 30em
+	.Header-title
+		margin-top 2em
+		font-size 2.5em
+		border-left 2px solid clouds
+
 
  
 		 
