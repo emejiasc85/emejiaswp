@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /assets
+Disallow: /node_modules
+Disallow: .gitignore
+Disallow: package.json
+Sitemap: http://emejias.com/
