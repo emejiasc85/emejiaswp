@@ -6,8 +6,14 @@ alizarin 	= #e74c3c;
 clouds 		= #ecf0f1;
 wet 		= #34495e;
 asbestos 	= #7f8c8d;
+
+
 .u-font-size
 	font-size 2em !important
+.u-font-size-1-5
+	font-size 1.3em !important
+.u-margin-top-2em
+	margin-top: 2em
 .bgc-comments
 	background-color: #2c3e50
 .text-cloud
@@ -19,7 +25,7 @@ asbestos 	= #7f8c8d;
 	font-weight: lighter
 .roboto-medium
 	font-family 'Roboto', sans-serif;
-	font-weight: medium
+	font-weight: 300
 
 .MainNav
 	background-color rgba(black .3)
@@ -51,7 +57,7 @@ asbestos 	= #7f8c8d;
 		text-decoration none
 .MainNav-link-current
 	border 2px solid alizarin
-	text-decoration none			
+	text-decoration none
 .MainNav-down
 	background-color rgba(black .7) !important
 .Header
@@ -67,9 +73,15 @@ asbestos 	= #7f8c8d;
 	font-weight 500
 .Header-contact
 	background-color rgba(black .3)
-	border-radius 5px 
+	border-radius 5px
 	padding-top 1em
 	margin-top 1.5em
+.Services
+	background-color: clouds
+.Our-proccess
+	background-color white
+	margin-top 2em
+	padding-top 2em
 .portfolio
 	background-color clouds
 	padding-bottom 1em
@@ -85,6 +97,7 @@ asbestos 	= #7f8c8d;
 	border-radius 5px 5px 0 0
 .thumbnail
 	border none
+	background-color clouds
 .Footer
 	background-color: wet
 	position relative
@@ -111,13 +124,84 @@ asbestos 	= #7f8c8d;
 	width 100%
 	height 400px
 	color wet
-	font-weight 
+	font-weight
 	margin-top 2em
+
+
+/* COMMON PRICING STYLES */
+.panel.price,
+.panel.price>.panel-heading
+	border-radius 0px
+	-moz-transition all .3s ease
+	-o-transition  all .3s ease
+	-webkit-transition  all .3s ease
+
+.panel
+	.price:hover
+		box-shadow 0px 0px 30px rgba(0,0,0, .2)
+
+.panel.price:hover>.panel-heading
+	box-shadow 0px 0px 30px rgba(0,0,0, .2) inset
+
+
+
+.panel.price>.panel-heading
+	box-shadow  0px 5px 0px rgba(50,50,50, .2) inset
+	text-shadow 0px 3px 0px rgba(50,50,50, .6)
+
+
+.price
+	.list-group-item
+		border-bottom- 1px solid rgba(250,250,250, .5)
+
+
+.panel.price
+	.list-group-item:last-child
+		border-bottom-right-radius 0px
+		border-bottom-left-radius 0px
+
+.panel.price
+	.list-group-item:first-child
+		border-top-right-radius 0px
+		border-top-left-radius 0px
+
+
+.price
+	.panel-footer
+		color: #fff;
+		border-bottom 0px
+		background-color  rgba(0,0,0, .1)
+		box-shadow 0px 3px 0px rgba(0,0,0, .3)
+
+.panel.price .btn
+	box-shadow 0 -1px 0px rgba(50,50,50, .2) inset
+	border 0px
+
+/* red price */
+.price.panel-red>.panel-heading
+	color  #fff
+	background-color  #D04E50
+	border-color  #FF6062
+	border-bottom  1px solid #FF6062
+
+.price.panel-red>.panel-body
+	color  #fff
+	background-color  #EF5A5C
+
+.price.panel-red>.panel-body .lead
+	text-shadow  0px 3px 0px rgba(50,50,50, .3)
+
+.price.panel-red .list-group-item
+	color  #333
+	background-color  rgba(50,50,50, .01)
+	font-weight 600
+	text-shadow  0px 1px 0px rgba(250,250,250, .75)
+
 @media screen and (min-width:750px)
 	.FooterNav
 		border-left 2px solid alizarin
 		padding-left 1em
-	
+
 @media screen and (min-width:970px)
 	.MainNav
 		background-color transparent
@@ -132,10 +216,10 @@ asbestos 	= #7f8c8d;
 		height 333px
 
 
- 
-		 
-		
-	
+
+
+
+
 
 
 
